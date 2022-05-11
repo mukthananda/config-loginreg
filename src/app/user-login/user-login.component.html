@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1 style="color: aqua;">userlogin</h1>
+      <form (ngSubmit)="userlogin()">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">UserID or email</label>
+          <input type="name"[(ngModel)]="user.usernameOrEmail" class="form-control" id="userid" name="usernameOrEmail">
+        </div>
+        <div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password"[(ngModel)]="user.password" class="form-control" id="password" name="password" >
+        </div>
+        </div>
+        <button type=" submit" class=" btn-btn-primary">login</button>
+      </form>
+    
+    </div>
